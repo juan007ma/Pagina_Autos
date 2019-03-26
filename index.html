@@ -4,8 +4,14 @@
         <meta charset="utf-8">
         <title>Autos</title>
         <link rel="stylesheet" href="eslilos.css">
-        <link href="datos.js"
+        <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        
     </head>
+
+
     <body>
         <div class="box">
             <h2>Autos</h2>
@@ -23,13 +29,16 @@
                     <label>Placas</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" id="año">
+                    <input type="text" id="ann">
                     <label>Año</label>
                 </div>
-               <input type="submit" name="" value="Envíar">
+               <input type="button" id="enviar" name="" value="Envíar">
             </form>
         </div>
-        <div id="datos">Has Puesto los siguentes datos</div>
-        
+        <div id="datos"></div>
+
+
+
+       <script src="datos.js"></script> 
     </body>
     </html>

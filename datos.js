@@ -1,20 +1,17 @@
-function obtenerdat(){
-    var mar = documet.getElementById("marca").value
-    var mod = documet.getElementById("modelo").value
-    var pla = documet.getElementById("placas").value
-    var año = documet.getElementById("año").value
+$(document).ready(function () {
+
+  $('#enviar').click(function () {
+    var mar = document.getElementById("marca").value;
+    var mod = document.getElementById("modelo").value;
+    var pla = document.getElementById("placas").value;
+    var ann = document.getElementById("ann").value;
     
-    var dat = [mar, mod, pla, año]
-    return dat
-    }
+    //alert("Marca"+mar+mod+pla+ann);
+   $('#datos').html("sus datos introducidos son los siguientes \n"
+   + mar + "marca \n"
+   + mod + "modelo \n"
+   + pla + "placas \n"
+   + ann + "año \n")   
+  });
     
-    datos = obtenerdat()
-    
-    documet.write("sus datos introducidos son los siguientes \n"
-    + datos + "marca \n"
-    + datos + "modelo \n"
-    + datos + "placas \n"
-    + datos + "año \n"
-    ); 
-    
-    
+ });
